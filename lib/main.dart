@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:myoffice/pages/home_page.dart';
+import 'package:myoffice/pages/splash_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +13,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'My Office',
-      home: HomePage(),
+      debugShowCheckedModeBanner: false,
+      home: SplashPage(),
     );
   }
 }
