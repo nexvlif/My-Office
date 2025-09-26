@@ -27,7 +27,7 @@ class _SplashPageState extends State<SplashPage> {
         children: [
           Container(color: const Color(0xFF1A67BB),),
           Positioned.fill(child: Image.asset('assets/images/bg_overlay.png', fit: BoxFit.cover,)),
-          Center(child: Text('My Office', style: GoogleFonts.poppins(fontSize: 30, color: Colors.white, fontWeight: FontWeight.bold),),)
+          Center(child: Text('My Office', style: GoogleFonts.poppins(fontSize: 30, color: Colors.white, fontWeight: FontWeight.w600),),)
         ],
       ),
     );
