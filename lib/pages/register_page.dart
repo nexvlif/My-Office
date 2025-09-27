@@ -46,18 +46,18 @@ class _RegisterPageState extends State<RegisterPage> {
                           filled: true,
                           fillColor: const Color(0xFF0056b3).withValues(alpha: 0.1),
                           border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(16),
+                            borderRadius: BorderRadius.circular(8),
                             borderSide: BorderSide.none,
                           ),
                           enabledBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(16),
+                            borderRadius: BorderRadius.circular(8),
                             borderSide: const BorderSide(
                               color: Colors.transparent,
                               width: 0,
                             ),
                           ),
                           focusedBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(16),
+                            borderRadius: BorderRadius.circular(8),
                             borderSide: const BorderSide(
                               color: Color(0xFF0056b3),
                               width: 2,
@@ -77,18 +77,18 @@ class _RegisterPageState extends State<RegisterPage> {
                           filled: true,
                           fillColor: const Color(0xFF0056b3).withValues(alpha: 0.1),
                           border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(16),
+                            borderRadius: BorderRadius.circular(8),
                             borderSide: BorderSide.none,
                           ),
                           enabledBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(16),
+                            borderRadius: BorderRadius.circular(8),
                             borderSide: const BorderSide(
                               color: Colors.transparent,
                               width: 0,
                             ),
                           ),
                           focusedBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(16),
+                            borderRadius: BorderRadius.circular(8),
                             borderSide: const BorderSide(
                               color: Color(0xFF0056b3),
                               width: 2,
@@ -108,18 +108,18 @@ class _RegisterPageState extends State<RegisterPage> {
                           filled: true,
                           fillColor: const Color(0xFF0056b3).withValues(alpha: 0.1),
                           border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(16),
+                            borderRadius: BorderRadius.circular(8),
                             borderSide: BorderSide.none,
                           ),
                           enabledBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(16),
+                            borderRadius: BorderRadius.circular(8),
                             borderSide: const BorderSide(
                               color: Colors.transparent,
                               width: 0,
                             ),
                           ),
                           focusedBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(16),
+                            borderRadius: BorderRadius.circular(8),
                             borderSide: const BorderSide(
                               color: Color(0xFF0056b3),
                               width: 2,
@@ -139,18 +139,18 @@ class _RegisterPageState extends State<RegisterPage> {
                           filled: true,
                           fillColor: const Color(0xFF0056b3).withValues(alpha: 0.1),
                           border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(16),
+                            borderRadius: BorderRadius.circular(8),
                             borderSide: BorderSide.none,
                           ),
                           enabledBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(16),
+                            borderRadius: BorderRadius.circular(8),
                             borderSide: const BorderSide(
                               color: Colors.transparent,
                               width: 0,
                             ),
                           ),
                           focusedBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(16),
+                            borderRadius: BorderRadius.circular(8),
                             borderSide: const BorderSide(
                               color: Color(0xFF0056b3),
                               width: 2,
@@ -171,18 +171,18 @@ class _RegisterPageState extends State<RegisterPage> {
                           filled: true,
                           fillColor: const Color(0xFF0056b3).withValues(alpha: 0.1),
                           border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(16),
+                            borderRadius: BorderRadius.circular(8),
                             borderSide: BorderSide.none,
                           ),
                           enabledBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(16),
+                            borderRadius: BorderRadius.circular(8),
                             borderSide: const BorderSide(
                               color: Colors.transparent,
                               width: 0,
                             ),
                           ),
                           focusedBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(16),
+                            borderRadius: BorderRadius.circular(8),
                             borderSide: const BorderSide(
                               color: Color(0xFF0056b3),
                               width: 2,
@@ -224,7 +224,7 @@ class _RegisterPageState extends State<RegisterPage> {
                       backgroundColor: const Color(0xFF0056B3),
                       minimumSize: const Size(0, 48), // tinggi tombol
                       shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(16),
+                        borderRadius: BorderRadius.circular(8),
                       ),
                     ),
                     onPressed: () {},
@@ -292,7 +292,7 @@ class _RegisterPageState extends State<RegisterPage> {
                       elevation: 0,
                       shadowColor: Colors.transparent,
                       shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(16),
+                        borderRadius: BorderRadius.circular(8),
                       ),
                       foregroundColor: const Color(0xFF333333),
                       minimumSize: const Size(0, 48),
