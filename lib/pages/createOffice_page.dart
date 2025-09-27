@@ -2,18 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class RegisterPage extends StatefulWidget {
-  const RegisterPage({super.key});
+class CreateOfficePage extends StatefulWidget {
+  const CreateOfficePage({super.key});
 
   @override
-  State<RegisterPage> createState() => _RegisterPageState();
+  State<CreateOfficePage> createState() => _CreateOfficePageState();
 }
 
-class _RegisterPageState extends State<RegisterPage> {
+class _CreateOfficePageState extends State<CreateOfficePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-            extendBodyBehindAppBar: true,
+      extendBodyBehindAppBar: true,
       appBar: AppBar(
         toolbarHeight: 100,
         centerTitle: true,
@@ -28,7 +28,7 @@ class _RegisterPageState extends State<RegisterPage> {
           preferredSize: const Size.fromHeight(40),
           child: const SizedBox.shrink(),
         ),
-        title: Text('Daftar', style: GoogleFonts.poppins(fontSize: 24, fontWeight: FontWeight.w600, color: Color(0xFF0056b3)),),
+        title: Text('Buat Kantor', style: GoogleFonts.poppins(fontSize: 24, fontWeight: FontWeight.w600, color: Color(0xFF0056b3)),),
         leading: IconButton(
           padding: const EdgeInsets.only(left: 30),
           icon: const Icon(Icons.arrow_back_ios_rounded, color: Color(0xFF0056b3)),
@@ -47,21 +47,11 @@ class _RegisterPageState extends State<RegisterPage> {
               fit: BoxFit.cover,
             ),
           ),
-          // Center(
-          //   child: Column(
-          //     children: [
-          //       Text('Daftar', style: GoogleFonts.poppins(fontSize: 24, fontWeight: FontWeight.w600, color: Color(0xFF333333)),),
-          //       // Image(image: AssetImage('assets/images/masuk.png'), width: 247, height: 247,),
-          //     ],
-          //   ),
-          // ),
           Container(
             margin: const EdgeInsets.all(50),
             child: Column(
               children: [
                 const SizedBox(height: 50),
-                Text('Silakan daftar untuk membuat akun dan mulai menggunakan layanan kami',textAlign: TextAlign.center, style: GoogleFonts.poppins(fontSize: 12, fontWeight: FontWeight.w600, color: Color(0xFF333333)),),
-                const SizedBox(height: 20),
                 Form(
                   child: Column(
                     children: [
@@ -87,7 +77,7 @@ class _RegisterPageState extends State<RegisterPage> {
                               width: 2,
                             ),
                           ),
-                          labelText: 'Nama Lengkap',
+                          labelText: 'Nama Perusahaan',
                           labelStyle: GoogleFonts.poppins(
                             fontSize: 11,
                             fontWeight: FontWeight.w500,
@@ -118,7 +108,7 @@ class _RegisterPageState extends State<RegisterPage> {
                               width: 2,
                             ),
                           ),
-                          labelText: 'Email',
+                          labelText: 'Alamat Perusahaan',
                           labelStyle: GoogleFonts.poppins(
                             fontSize: 11,
                             fontWeight: FontWeight.w500,
@@ -149,7 +139,7 @@ class _RegisterPageState extends State<RegisterPage> {
                               width: 2,
                             ),
                           ),
-                          labelText: 'Nomor Telepon',
+                          labelText: 'Nomor Telepon Perusahaan',
                           labelStyle: GoogleFonts.poppins(
                             fontSize: 11,
                             fontWeight: FontWeight.w500,
@@ -180,13 +170,12 @@ class _RegisterPageState extends State<RegisterPage> {
                               width: 2,
                             ),
                           ),
-                          labelText: 'Password',
+                          labelText: 'Email Perusahaan',
                           labelStyle: GoogleFonts.poppins(
                             fontSize: 11,
                             fontWeight: FontWeight.w500,
                             color: Color(0xFF333333),
                           ),
-                          suffixIcon: Icon(Icons.visibility_off, color: Color(0xFF333333)),
                         ),
                       ),
                       const SizedBox(height: 30),
@@ -212,34 +201,49 @@ class _RegisterPageState extends State<RegisterPage> {
                               width: 2,
                             ),
                           ),
-                          labelText: 'Konfirmasi Password',
+                          labelText: 'Website Perusahaan (Opsional)',
                           labelStyle: GoogleFonts.poppins(
                             fontSize: 11,
                             fontWeight: FontWeight.w500,
                             color: Color(0xFF333333),
                           ),
-                          suffixIcon: Icon(Icons.visibility_off, color: Color(0xFF333333)),
+                        ),
+                      ),
+                      const SizedBox(height: 30),
+                      TextFormField(
+                        decoration: InputDecoration(
+                          filled: true,
+                          fillColor: const Color(0xFF0056b3).withValues(alpha: 0.1),
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(8),
+                            borderSide: BorderSide.none,
+                          ),
+                          enabledBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(8),
+                            borderSide: const BorderSide(
+                              color: Colors.transparent,
+                              width: 0,
+                            ),
+                          ),
+                          focusedBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(8),
+                            borderSide: const BorderSide(
+                              color: Color(0xFF0056b3),
+                              width: 2,
+                            ),
+                          ),
+                          labelText: 'NPWP Perusahaan (Opsional)',
+                          labelStyle: GoogleFonts.poppins(
+                            fontSize: 11,
+                            fontWeight: FontWeight.w500,
+                            color: Color(0xFF333333),
+                          ),
                         ),
                       ),
                     ],
                   ),
                 ),
-                const SizedBox(height: 15),
-                Align(
-                  alignment: Alignment.centerLeft,
-                  child: TextButton(
-                    onPressed: () {},
-                    child: Text(
-                      'Lupa Password?',
-                      style: GoogleFonts.poppins(
-                        fontSize: 11,
-                        fontWeight: FontWeight.w600,
-                        color: Color(0xFF0056B3),
-                      ),
-                    ),
-                  ),
-                ),
-                const SizedBox(height: 25),
+                const SizedBox(height: 30),
                 SizedBox(
                   height: 43,
                   width: double.infinity,
@@ -261,41 +265,6 @@ class _RegisterPageState extends State<RegisterPage> {
                       ),
                     ),
                   ),
-                ),
-                const SizedBox(height: 11),
-                Align(
-                  alignment: Alignment.centerLeft,
-                  child: Row(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      const SizedBox(width: 12),
-                      Text(
-                        'Belum Punya Akun?',
-                        style: GoogleFonts.poppins(
-                          fontSize: 11,
-                          fontWeight: FontWeight.w400,
-                          color: const Color(0xFF1F1A1A).withValues(alpha: 0.9),
-                        ),
-                      ),
-                      const SizedBox(width: 5),
-                      TextButton(
-                        style: TextButton.styleFrom(
-                          padding: EdgeInsets.zero,
-                          minimumSize: Size(0, 0),
-                          tapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                        ),
-                        onPressed: () {},
-                        child: Text(
-                          'Daftar',
-                          style: GoogleFonts.poppins(
-                            fontSize: 11,
-                            fontWeight: FontWeight.w500,
-                            color: const Color(0xFF0056B3),
-                          ),
-                        ),
-                      ),
-                    ],
-                  )
                 ),
                 const SizedBox(height: 30),
                 Text('Atau', 
@@ -333,7 +302,7 @@ class _RegisterPageState extends State<RegisterPage> {
                         ),
                         const SizedBox(width: 20),
                         Text(
-                          'Daftar Dengan Google',
+                          'Masuk Dengan Google',
                           style: GoogleFonts.poppins(
                             fontSize: 16,
                             fontWeight: FontWeight.w600,
